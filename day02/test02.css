@@ -1,0 +1,20 @@
+/* h1{
+  color: red;
+  text-shadow: 1px 1px 10px black;
+} */
+
+.shadow2{
+  text-shadow: 5px 5px 3px #ffa500;
+}
+
+.spa1{
+  letter-spacing: 0.2em;
+  word-spacing: 0.5em;
+}
+
+.book{
+  /* list-style-type: square; */
+  /* list-style-image: url(./img/img05.png); */
+  /* list-style-position: inside; */
+  list-style: square url(./img/img05.png) inside;
+}
