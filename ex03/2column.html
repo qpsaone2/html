@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body{
+      background-image: url(bg1.jpg);
+    }
+    ul {
+      list-style:none;  
+      margin-left:-30px;  
+    }
+    li {
+      background-image:url('book-icon.png');
+      background-size: 20px;  
+      background-repeat:no-repeat;  
+      background-position:right;  
+      padding-left:50px; 
+      line-height:40px;  
+    }
+  </style>
+  <title>CSS 레이아웃 - 2단 레이아웃</title>
+  <link rel="stylesheet" href="2column.css">
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+      <h1>강의 목차</h1>
+    </header>
+    <aside id="sidebar">
+      <body>
+        <ul>
+          <li>HTML</li>
+          <li>JAVA</li>
+          <li>CSS</li>
+          <li>C++</li>
+        </ul>
+      </body>
+    </aside>
+    <section id="contents">
+      <h2></h2>
+    </section>
+    <footer id="footer">
+      <h2>Q&A</h2>
+    <footer>
+  </div>
+
+</body>
+</html>
