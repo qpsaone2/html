@@ -1,0 +1,90 @@
+#container {
+  width:1000px;
+  margin:20px auto;
+  position: absolute;
+}
+h1 {
+  text-align:center;
+  color: burlywood;
+  border: 1px solid ;
+  
+}
+
+h1:hover{
+  transform: skewX(15deg);
+}
+.prod-list {
+  list-style:none;
+  padding:0;
+}
+.prod-list li {
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.prod-list img {
+  margin:0;
+  padding:0;
+  float:left;
+  z-index:5;
+  width: 300px;
+  height: 200px;
+}
+
+.prod-list .caption {
+  
+  position: absolute;
+  top: 200px;
+  width: 300px;
+  height: 200px;
+  padding-top: 20px;
+  background-color: sandybrown;
+  opacity: 0  ;
+  transition: all 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.prod-list li:hover .caption{
+  opacity: 1;
+  transform: translateY(-200px);
+}
+
+.prod-list .caption h2, .prod-list .caption p{
+  color: #fff;
+  text-align: center;
+
+}
+
+#ex div{
+  float:left;
+  width:250px;
+  height:50px;
+  margin:5px 10px;
+  padding:5px;
+  color:white;
+  background-color:chocolate;
+  border-radius:5px;
+  text-align:center;
+  font-weight:bold;	
+  position: fixed;
+  left: 20px;
+  bottom: 550px;
+
+}
+#ex:hover div{
+  height:400px;
+  
+}
+#ex .ease {
+  
+  transition:3s ease;
+}
+#ex .linear{
+  transition:3s linear;
+}
+#ex .ease-in{
+  transition:3s ease-in;
+  transition-delay: 1s  ;
+}
