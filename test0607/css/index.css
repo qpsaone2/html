@@ -1,0 +1,29 @@
+p{
+  margin: 50px;
+}
+
+.card img{
+ display: none;
+}
+
+.card .card-body :hover .flower1{
+  position: absolute;
+  opacity: 1 ;
+  transform: translateY(-200px);
+  position: relative;
+  z-index: 10;
+}
+
+.footer1{
+  margin: 50px;
+  background-color: black;
+  color: #fff;
+}
+.text-white{
+  text-decoration-line: none ;
+}
+
+#carouselExampleIndicators:hover{
+  opacity: 50%;
+  
+}

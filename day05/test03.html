@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <script>  
+      var seed = prompt("더할 수를 입력하세요");
+      var count =0;
+      var i;
+  
+      for(i=0;i<=4;i++){
+        var picked1=Math.floor((Math.random()*seed)+1);
+        var picked2=Math.floor((Math.random()*seed)+1);
+        var result = picked1+picked2;
+        document.write(picked1 + "+" + picked2 + "=" + result + "<br>");
+        if(seed == result){
+          count += 1;
+        }
+        else{
+          count;
+        }
+      }
+  
+      document.write("맞춘 갯수는 :" + count);
+  
+      </script>
+
+<script>
+  var seed = prompt("더한 수를 예측하시오 : ", "");
+  var count = 0;
+
+  for (i = 0; i <= 4; i++) {
+    var picked = Math.floor((Math.random() * seed) + 1);
+    var picked2 = Math.floor((Math.random() * seed) + 1);
+    var sum = picked + picked2;
+    document.write(picked + " + " + picked2 + " = " + sum + "<br>");
+    if (seed == sum) {
+      count += 1;
+    } else {
+      count;
+    }
+  }
+  document.write("맞은 갯수는 : " + count);
+</script>
+
+  </body>
+</html>

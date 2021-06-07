@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .accent{
+        color: blueviolet;
+        font-weight: bold;
+        font-size: large;
+      }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="css/function.css">
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" onclick="changeBeg('Green');   console.log('Green 클릭!')";>Green</a> </li>
+      <li><a href="#" onclick="changeBeg('Orange');  console.log('Orange 클릭!')";>Orange</a></li>
+      <li><a href="#" onclick="changeBeg('Purple');  console.log('Purple 클릭!')">Purple</a></li>
+    </ul>
+    <div id="result" > </div>
+    <script>
+      function changeBeg(color){
+        var result = document.querySelector('#result');
+        result.style.backgroundColor= color;
+      }
+    </script>
+  </body>
+</html>
